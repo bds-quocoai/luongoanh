@@ -42,6 +42,10 @@ a {
     box-shadow: none;
 }
 
+.nav-logo img{
+    width: 150px;
+}
+
 .custom-toggler {
     background-color: transparent !important;
     border: none !important;
@@ -97,11 +101,20 @@ a {
     color: white;
 }
 
+.re-logo-wrapper {
+    display: inline-block;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .re-hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.55);
 }
 
 .re-hero-content {
