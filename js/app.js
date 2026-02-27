@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // const danhSachBatDongSan = document.getElementById("danhSachBatDongSan");
     const batDongSanNoiBat = document.getElementById("batDongSanNoiBat");
 
     let duLieuToanBo = [];
@@ -82,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Bắt sự kiện click xem chi tiết
-    danhSachBatDongSan.addEventListener("click", function (e) {
+    batDongSanNoiBat.addEventListener("click", function (e) {
 
         if (e.target.classList.contains("re-btn-primary")) {
 
