@@ -112,6 +112,7 @@ a {
 }
 
 .re-description {
+    padding: 1rem;
     font-size: 15px;
     line-height: 1.6;
     opacity: 0.95;
