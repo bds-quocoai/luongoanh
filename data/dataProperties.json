@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
+    "id": 1, 
     "ten": "Biệt Thự The Summit",
-    "gia": "1.500.000 USD",
+    "gia": "1.500.000",
     "dienTich": "320 m²",
     "viTri": "Tây Hồ, Hà Nội",
-    "trangThai": "Đang bán",
+    "trangThai": true,
     "noiBat": true,
     "moTa": "Biệt thự cao cấp nằm tại khu vực Tây Hồ với thiết kế hiện đại, không gian mở, sân vườn rộng rãi và tầm nhìn thoáng đãng. Phù hợp để ở hoặc đầu tư lâu dài.",
     "hinhAnh": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
@@ -18,10 +18,10 @@
   {
     "id": 2,
     "ten": "Biệt Thự Ven Sông",
-    "gia": "2.800.000 USD",
+    "gia": "2.800.000",
     "dienTich": "450 m²",
     "viTri": "Long Biên, Hà Nội",
-    "trangThai": "Đang bán",
+    "trangThai": true,
     "noiBat": false,
     "moTa": "Biệt thự cao cấp nằm tại khu vực Tây Hồ với thiết kế hiện đại, không gian mở, sân vườn rộng rãi và tầm nhìn thoáng đãng. Phù hợp để ở hoặc đầu tư lâu dài.",
     "hinhAnh": "https://images.unsplash.com/photo-1613977257363-707ba9348227",
@@ -34,11 +34,11 @@
   {
     "id": 3,
     "ten": "Park View Heights",
-    "gia": "950.000 USD",
+    "gia": "950.000",
     "dienTich": "180 m²",
     "viTri": "Ba Đình, Hà Nội",
-    "trangThai": "Đã bán",
-    "noiBat": true,
+    "trangThai": false,
+    "noiBat": false,
     "moTa": "Biệt thự cao cấp nằm tại khu vực Tây Hồ với thiết kế hiện đại, không gian mở, sân vườn rộng rãi và tầm nhìn thoáng đãng. Phù hợp để ở hoặc đầu tư lâu dài.",
     "hinhAnh": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
     "hinhAnhPhu": [

@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function hienThiBatDongSan(danhSach) {
 
         danhSachBatDongSan.innerHTML = "";
-
-        danhSach.forEach(batDongSan => {
+        const danhSachDangBan = danhSach.filter(bds => bds.trangThai === true);
+        danhSachDangBan.forEach(batDongSan => {
 
             const cot = document.createElement("div");
             cot.className = "col-md-4";
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                          alt="${batDongSan.ten}">
                     <div class="card-body d-flex flex-column">
                         <h5>${batDongSan.ten}</h5>
-                        <p class="re-price">${batDongSan.gia}</p>
+                        <p class="re-price">${batDongSan.gia}₫</p>
                         <p class="text-muted small">
                             ${batDongSan.dienTich} | ${batDongSan.viTri}
                         </p>
@@ -66,71 +66,71 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!batDongSan) return;
 
-            hienThiChiTiet(batDongSan);
-            modal.style.display = "flex";
+            // hienThiChiTiet(batDongSan);
+            // modal.style.display = "flex";
+            window.location.href = `chi-tiet.html?id=${id}`;
         }
     });
 
     // Hàm hiển thị chi tiết
-    function hienThiChiTiet(batDongSan) {
+    // function hienThiChiTiet(batDongSan) {
 
-        // Gộp ảnh chính + ảnh phụ
-        const tatCaAnh = [batDongSan.hinhAnh, ...batDongSan.hinhAnhPhu];
+    //     // Gộp ảnh chính + ảnh phụ
+    //     const tatCaAnh = [batDongSan.hinhAnh, ...batDongSan.hinhAnhPhu];
 
-        noiDungChiTiet.innerHTML = `
-            <h2>${batDongSan.ten}</h2>
-            <p><strong>Giá:</strong> ${batDongSan.gia}</p>
-            <p><strong>Diện tích:</strong> ${batDongSan.dienTich}</p>
-            <p><strong>Vị trí:</strong> ${batDongSan.viTri}</p>
-            <p><strong>Trạng thái:</strong> ${batDongSan.trangThai}</p>
-            <p><strong>Mô tả:</strong></p>
-            <p class="mo-ta-bds">
-                ${batDongSan.moTa}
-            </p>
+    //     noiDungChiTiet.innerHTML = `
+    //         <h2>${batDongSan.ten}</h2>
+    //         <p><strong>Giá:</strong> ${batDongSan.gia}₫</p>
+    //         <p><strong>Diện tích:</strong> ${batDongSan.dienTich}</p>
+    //         <p><strong>Vị trí:</strong> ${batDongSan.viTri}</p>
+    //         <p><strong>Mô tả:</strong></p>
+    //         <p class="mo-ta-bds">
+    //             ${batDongSan.moTa}
+    //         </p>
 
-            <!-- Ảnh lớn -->
-            <div class="khung-anh-lon">
-                <img id="anhChinh" src="${batDongSan.hinhAnh}">
-            </div>
+    //         <!-- Ảnh lớn -->
+    //         <div class="khung-anh-lon">
+    //             <img id="anhChinh" src="${batDongSan.hinhAnh}">
+    //         </div>
 
-            <!-- Thumbnail -->
-            <div id="danhSachAnhPhu">
-                ${tatCaAnh.map((img, index) => `
-                    <img src="${img}" 
-                        class="anh-phu ${index === 0 ? 'active' : ''}"
-                        data-index="${index}">
-                `).join("")}
-            </div>
+    //         <!-- Thumbnail -->
+    //         <div id="danhSachAnhPhu">
+    //             ${tatCaAnh.map((img, index) => `
+    //                 <img src="${img}" 
+    //                     class="anh-phu ${index === 0 ? 'active' : ''}"
+    //                     data-index="${index}">
+    //             `).join("")}
+    //         </div>
 
-            <!-- Nút hành động -->
-            <div class="nhom-nut-lien-he">
-                <a href="tel:0909123456" class="btn-lien-he">
-                    📞 Liên hệ
-                </a>
+    //         <!-- Nút hành động -->
+    //         <div class="nhom-nut-lien-he">
+    //             <a href="tel:0909123456" class="btn-lien-he">
+    //                 📞 Liên hệ
+    //             </a>
 
-                <a href="https://zalo.me/0909123456" target="_blank" class="btn-zalo">
-                    💬 Zalo
-                </a>
-            </div>
-        `;
+    //             <a href="https://zalo.me/0909123456" target="_blank" class="btn-zalo">
+    //                 💬 Zalo
+    //             </a>
+    //         </div>
+    //     `;
 
-        const anhChinh = document.getElementById("anhChinh");
-        const danhSachAnhPhu = document.querySelectorAll(".anh-phu");
+    //     const anhChinh = document.getElementById("anhChinh");
+    //     const danhSachAnhPhu = document.querySelectorAll(".anh-phu");
 
-        danhSachAnhPhu.forEach(anh => {
-            anh.addEventListener("click", function () {
+    //     danhSachAnhPhu.forEach(anh => {
+    //         anh.addEventListener("click", function () {
 
-                // đổi ảnh lớn
-                anhChinh.src = this.src;
+    //             // đổi ảnh lớn
+    //             anhChinh.src = this.src;
 
-                // reset viền
-                danhSachAnhPhu.forEach(a => a.style.border = "none");
+    //             // reset viền
+    //             danhSachAnhPhu.forEach(a => a.style.border = "none");
 
-                // thêm viền ảnh đang chọn
-                this.style.border = "2px solid #14213d";
-            });
-        });
-    }
+    //             // thêm viền ảnh đang chọn
+    //             this.style.border = "2px solid #14213d";
+    //         });
+    //     });
+    // }
 
     // Đóng modal
     dongModal.addEventListener("click", function () {
