@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         noiDungChiTiet.innerHTML = `
             <h2>${batDongSan.ten}</h2>
             <p><strong>Giá:</strong> ${batDongSan.gia}₫</p>
-            <p><strong>Diện tích:</strong> ${batDongSan.dienTich}</p>
+            <p><strong>Diện tích:</strong> ${batDongSan.dienTich} m²</p>
             <p><strong>Vị trí:</strong> ${batDongSan.viTri}</p>
 
             <p class="mt-3">${batDongSan.moTa}</p>

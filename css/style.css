@@ -64,7 +64,7 @@ a {
 /* ================= NAVBAR ================= */
 .re-navbar {
     backdrop-filter: blur(10px);
-    /* background: rgba(20, 33, 61, 0.9); */
+    background: rgba(20, 33, 61, 0.9);
     border-radius: 16px;
     padding: 10px 0 10px 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
