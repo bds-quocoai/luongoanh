@@ -147,6 +147,25 @@ a {
     opacity: 0.95;
 }
 
+.re-hero-chi-tiet {
+    position: relative;
+    padding-top: 60px;
+    height: 25vh;
+    background: url('https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=2070') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.re-hero-chi-tiet::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
 /* ================= SECTION ================= */
 .re-section {
     padding: 30px 0;
@@ -457,3 +476,4 @@ a {
     }
 
 }
+

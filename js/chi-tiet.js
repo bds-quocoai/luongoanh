@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <p class="mt-3">${batDongSan.moTa}</p>
             <div class="nhom-nut-lien-he">
-                <a href="tel:0909123456" class="btn-lien-he">
-                    📞 Liên hệ
+                <a href="tel:0976912972" class="btn-lien-he">
+                    <i class="bi bi-telephone-fill"></i> Liên hệ
                 </a>
 
-                <a href="https://zalo.me/0909123456" target="_blank" class="btn-zalo">
-                    💬 Zalo
+                <a href="https://zalo.me/0976912972" target="_blank" class="btn-zalo">
+                    <img class="icon-zalo-26" src="assets/icons/icon_z.png" alt=""> Nhắn Zalo
                 </a>
             </div>
             <div class="khung-anh-lon">
