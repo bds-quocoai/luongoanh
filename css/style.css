@@ -273,8 +273,8 @@ a {
     margin-top: 25px;
 }
 
-.btn-lien-he,
-.btn-zalo {
+.nhom-nut-lien-he .btn-lien-he,
+.nhom-nut-lien-he .btn-zalo {
     flex: 1;
     text-align: center;
     padding: 12px;
@@ -284,21 +284,21 @@ a {
     transition: 0.3s;
 }
 
-.btn-lien-he {
+.nhom-nut-lien-he .btn-lien-he {
     background: #14213d;
     color: white;
 }
 
-.btn-lien-he:hover {
+.nhom-nut-lien-he .btn-lien-he:hover {
     background: #0f1a30;
 }
 
-.btn-zalo {
+.nhom-nut-lien-he .btn-zalo {
     background: #0068ff;
     color: white;
 }
 
-.btn-zalo:hover {
+.nhom-nut-lien-he .btn-zalo:hover {
     background: #0050c7;
 }
 
@@ -354,7 +354,7 @@ a {
 .floating-contact .btn-zalo {
     max-height: 55px;
     max-width: 55px;
-    display: inline-block;
+    /* display: inline-block; */
     animation: ring 3s infinite;
     background: #0068ff;
     font-weight: bold;
@@ -434,6 +434,12 @@ a {
 #danhSachAnhPhu::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 10px;
+}
+
+.icon-zalo-26 {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
 }
 
 /* ================= MOBILE ================= */
