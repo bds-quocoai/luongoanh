@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sản phẩm | BĐS Lương Oanh</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="re-header">
+        <div class="container mt-2">
+            <nav class="navbar navbar-expand-lg re-navbar">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand text-white fw-bold" href="index.html">
+                        Lương Oanh
+                    </a>
+
+                    <button class="navbar-toggler custom-toggler navbar-dark"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#reNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="reNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gioi-thieu.html">Giới thiệu</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="san-pham.html">Sản phẩm</a></li>
+                            <li class="nav-item"><a class="nav-link" href="quy-trinh.html">Quy trình</a></li>
+                        </ul>
+
+                        <div class="re-phone-btn text-center">
+                            <a href="tel:0976912972">
+                                <i class="bi bi-telephone-fill"></i> Liên hệ ngay
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="re-hero-chi-tiet">
+        <div class="re-hero-content">
+            <h1>Danh sách bất động sản</h1>
+        </div>
+    </section>
+
+    <!-- ================= DANH SÁCH SẢN PHẨM ================= -->
+    <section class="re-section">
+        <div class="container">
+
+            <div class="row g-4" id="danhSachBatDongSan">
+                <!-- JS sẽ render card vào đây -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="re-footer">
+        <div class="container text-center">
+            <p>© 2026 Bất Động Sản Lương Oanh</p>
+            <a href="tel:0976912972">
+                <p>Điện thoại: 0976 912 972</p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="tel:0976912972" class="floating-btn btn-call">
+            <i class="bi bi-telephone-fill"></i>
+        </a>
+
+        <a href="https://zalo.me/0976912972" class="floating-btn btn-zalo">
+            <img style="width: 26px; height: 26px;" src="assets/icons/icon_z.png" alt="">
+        </a>
+    </div>
+
+    <!-- ================= JS ================= -->
+    <script src="js/san-pham.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("click", function (event) {
+            const navbarCollapse = document.getElementById("reNav");
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+
+            if (navbarCollapse.classList.contains("show")) {
+                const isClickInside =
+                    navbarCollapse.contains(event.target) ||
+                    navbarToggler.contains(event.target);
+
+                if (!isClickInside) {
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

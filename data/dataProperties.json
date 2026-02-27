@@ -22,7 +22,7 @@
     "dienTich": 450,
     "viTri": "Long Biên, Hà Nội",
     "trangThai": true,
-    "noiBat": false,
+    "noiBat": true,
     "moTa": "Biệt thự cao cấp nằm tại khu vực Tây Hồ với thiết kế hiện đại, không gian mở, sân vườn rộng rãi và tầm nhìn thoáng đãng. Phù hợp để ở hoặc đầu tư lâu dài.",
     "hinhAnh": "https://images.unsplash.com/photo-1613977257363-707ba9348227",
     "hinhAnhPhu": [
@@ -37,7 +37,7 @@
     "gia": "950.000",
     "dienTich": 180,
     "viTri": "Ba Đình, Hà Nội",
-    "trangThai": false,
+    "trangThai": true,
     "noiBat": false,
     "moTa": "Biệt thự cao cấp nằm tại khu vực Tây Hồ với thiết kế hiện đại, không gian mở, sân vườn rộng rãi và tầm nhìn thoáng đãng. Phù hợp để ở hoặc đầu tư lâu dài.",
     "hinhAnh": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
