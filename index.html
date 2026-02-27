@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bất Động Sản Cao Cấp</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header class="re-header">
+        <div class="container mt-4">
+            <nav class="navbar navbar-expand-lg re-navbar">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand text-white fw-bold" href="#">Lương Oanh</a>
+
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#reNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="reNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Dự án</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Nhà phố</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Căn hộ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Đất nền</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li> -->
+                        </ul>
+
+                        <div class="re-phone-btn text-center">
+                            📞 +84 912 345 678
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="re-hero">
+        <div class="re-hero-content">
+
+            <img src="https://i.pravatar.cc/200" alt="Ảnh tư vấn" class="re-avatar">
+
+            <h1>Lương Oanh</h1>
+
+            <h4 class="re-subtitle">
+                Chuyên viên tư vấn Bất Động Sản
+            </h4>
+
+            <p class="re-description">
+                Hơn 8 năm kinh nghiệm môi giới và đầu tư BĐS.
+                Đồng hành cùng khách hàng trong việc lựa chọn
+                những tài sản giá trị và bền vững.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+                <a href="tel:0909123456" class="re-btn-primary">
+                    📞 Gọi ngay
+                </a>
+
+                <a href="https://zalo.me/0909123456" target="_blank" class="re-btn-outline">
+                    💬 Nhắn Zalo
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= BẤT ĐỘNG SẢN NỔI BẬT ================= -->
+    <section class="re-section bg-light">
+        <div class="container">
+            <h2 class="re-section-title">Bất Động Sản Nổi Bật</h2>
+
+            <!-- JS sẽ render vào đây -->
+            <div class="row g-4" id="danhSachBatDongSan">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="re-footer">
+        <div class="container text-center">
+            <p>© 2026 Bất Động Sản Cao Cấp</p>
+            <p>Email: contact@realestate.vn | Điện thoại: +84 912 345 678</p>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons (Mobile) -->
+    <div class="floating-contact">
+        <a href="tel:0909123456" class="floating-btn btn-call">
+            <i class="bi bi-telephone-fill"></i>
+        </a>
+
+        <a href="https://zalo.me/0909123456" target="_blank" class="floating-btn btn-zalo">
+            Z
+        </a>
+    </div>
+
+    <!-- ================= MODAL ================= -->
+    <div class="re-modal" id="chiTietModal">
+        <div class="re-modal-content">
+            <span class="re-modal-close" id="dongModal">&times;</span>
+
+            <div class="re-modal-body">
+                <div id="noiDungChiTiet"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
