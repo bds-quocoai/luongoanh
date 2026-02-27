@@ -1,6 +1,6 @@
 [
   {
-    "id": 1, 
+    "id": 3, 
     "ten": "Biệt Thự The Summit",
     "gia": "1.500.000",
     "dienTich": "320 m²",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 1,
     "ten": "Park View Heights",
     "gia": "950.000",
     "dienTich": "180 m²",
