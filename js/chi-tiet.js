@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="bi bi-telephone-fill"></i> Liên hệ
                 </a>
 
-                <a href="https://zalo.me/0976912972" target="_blank" class="btn-zalo">
+                <a href="https://zalo.me/0976912972" class="btn-zalo">
                     <img class="icon-zalo-26" src="assets/icons/icon_z.png" alt=""> Nhắn Zalo
                 </a>
             </div>
